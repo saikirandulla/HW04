@@ -20,16 +20,21 @@
 
 # Body
 
-
+def count(word , let):
+	count = 0
+	for letter in word:
+		if letter == let:
+			count = count + 1
+	print "Number of ", let + "'s in", word + " is", count
+	
 
 
 ################################################################################
 def main():
-
-    # Remove print("Hello World!") and add several functions calls to count()
-    # below, passing various strings and letters
-    print("Hello World!") 
-    
-
+	count("Hello World!", "o") 
+	count("aaaaaaaaaaaaaaa", "b")
+	count("creative", "e")
+	count("Golden Gate", "g")
+	count("Golden Gate", "G")
 if __name__ == '__main__':
     main()
